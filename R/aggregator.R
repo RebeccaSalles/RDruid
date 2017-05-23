@@ -42,11 +42,11 @@ druid.agg.doubleSum <- function(name, fieldName = name) {
 }
 
 druid.agg.min <- function(name, fieldName = name, ...) {
-  druid.build.aggregation(type="min", name = name, fieldName = fieldName)
+  druid.build.aggregation(type="doubleMin", name = name, fieldName = fieldName)
 }
 
 druid.agg.max <- function(name, fieldName = name, ...) {
-  druid.build.aggregation(type="max", name = name, fieldName = fieldName)
+  druid.build.aggregation(type="doubleMax", name = name, fieldName = fieldName)
 }
 
 #' Constructs a max aggregator over the given Druid metric
